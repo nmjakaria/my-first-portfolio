@@ -1,16 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
 }
+
 header {
     background: #FFF8F3;
     padding-top: 50px;
+    background: url(../images/developer.png), url(../images/header_bg.png),#FFF8F3;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center left, bottom right;
 }
+
 nav {
     width: 70%;
     max-height: 1600px;
@@ -18,43 +24,91 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
     align-items: center;
 }
+
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #474747;
     font-weight: normal;
     font-size: 20px;
 }
+
 nav ul li a:hover {
     color: #FD6E0A;
 }
+
 .logo {
     font-size: 24px;
     font-weight: bold;
 }
+
 .logo span {
     color: #FD6E0A;
 }
+
 .btn {
-    padding: 5px 16px;
+    padding: 19px 17px 18px 17px;
     background: #FD6E0A;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif !important;
 }
+
 .btn:hover {
     background: #e65c00;
 }
+
 nav ul li .btn {
+    font-weight: normal;
     padding: 18px 35px;
     width: 150px;
     height: 65px;
+}
+
+#banner {
+    margin: 46px 38px 0 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-contant {
+    max-width: 585px;
+}
+#banner .banner-contant h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+}
+
+#banner .banner-contant h1 {
+    font-size: 85px;
+    font-weight: bold;
+    color: #181818;
+}
+
+#banner .banner-contant p {
+    font-size: 18px;
+    color: #474747;
+    margin: 20px 0 30px 0;
+    line-height: 1.5;
+}
+
+#banner .banner-image img {
+    max-width: 584px;
+    vertical-align: middle;
+}
+#banner .banner-contant .btn-2 {
+    background: #FFF8F3;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
 }
