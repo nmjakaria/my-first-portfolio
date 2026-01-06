@@ -300,6 +300,10 @@ footer .footer-container {
     margin-bottom: 24px;
     border: none;
     border-radius: 5px;
-
-    color: #757575
+    color: #757575;
+}
+.footer-container form input[type="text"]:focus,
+.footer-container form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FD6E0A;
 }
